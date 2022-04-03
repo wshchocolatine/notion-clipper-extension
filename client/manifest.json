@@ -1,0 +1,34 @@
+{
+
+    "manifest_version": 2,
+    "name": "Notion Clipper",
+    "version": "1.0",
+  
+    "description": "Permet de save les sites sur une base de données Notion",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"]
+      }
+    ], 
+    "browser_action": {
+        "default_icon": "icons/folder-7.png", 
+        "default_title": "Notion Clipper", 
+        "default_popup": "http://localhost:3333"
+    },
+
+    "permissions": [
+      "tabs"
+    ], 
+     "browser_specific_settings": {
+    	"gecko": {
+      	     "id": "wshchocolatine@gmail.com"
+    	}
+     }
+  
+  }
+  
